@@ -47,6 +47,7 @@ conda install pip
 **(6)** Now install the following libraries one-by-one likewise in the **myenv** environment using the commands:
 ```Python
 conda install numpy
+conda install pandas
 conda install cython
 pip install scikit-surprise
 pip install --upgrade setuptools wheel
@@ -67,6 +68,8 @@ jupyter notebook
 ```
 
 Now you are ready with the whole environment setup of the **Surprise** library.
+
+
 
 
 
