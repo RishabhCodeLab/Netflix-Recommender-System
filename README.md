@@ -3,3 +3,8 @@ Rapid data growth brings a new era of information. Recommendation Systems filter
 
 ## Motivation
 In this project, we’ll build a baseline Movie Recommendation System using TMDB 5000 Movie Dataset. For novices like me, this kernel will serve as a foundation in recommendation systems and provide you with something to start with.
+
+**Data source -**: All required data for this project is available in a data folder.
+
+**To start this project, we have to create a virtual environment of Python from scratch in Anaconda Command Prompt and install all necessary libraries in that environment, including the Surprise library. So we have to follow some steps to create a virtual environment**
+
