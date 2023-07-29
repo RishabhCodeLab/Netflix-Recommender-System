@@ -8,4 +8,6 @@ In this project, we’ll build a baseline Movie Recommendation System using TMDB
 
 **To start this project, we have to create a virtual environment of Python from scratch in Anaconda Command Prompt and install all necessary libraries in that environment, including the Surprise library. So we have to follow some steps to create a virtual environment -**
 
+**(1)**
+
 
