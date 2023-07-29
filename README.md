@@ -69,9 +69,20 @@ jupyter notebook
 
 Now you are ready with the whole environment setup of the **Surprise** library.
 
+## Metrics and Results
 
+* Demographic filtering, we use the **IMDB** formula to calculate the rating or preferences of users.
 
+* In Content-based filtering **(Plot description based Recommender)**, we first create a matrix representation to calculate the similarity scores between movies based on their plot descriptions. In this matrix, each column corresponds to a word from the vocabulary, which includes all the words appearing in at least one movie's plot overview. Each row represents a movie, as before.
 
+* This matrix is constructed using the **Term Frequency-Inverse Document Frequency (TF-IDF)** technique. **TF-IDF** reduces the importance of words frequently occurring in plot overviews because such words might contribute little to a movie's overall meaning and theme. After creating the matrix with plot descriptions, we can compute a similarity score to measure how similar two films are in their plots.
+
+* In the Credits, Genres, and Keywords Based, Recommender system, we'll follow a process similar to what we did with our plot description-based recommender. However, there's a crucial difference: instead of using TF-IDF, we'll opt for the CountVectorizer(). This change is to avoid diminishing an actor's or director's importance based on their involvement in multiple movies. Assessing their significance relative to the number of films they've worked on could make more sense. With CountVectorizer(), every occurrence of an actor or director is treated as equally important. This approach enables us to capture their presence in the metadata without considering how frequently they appear in the dataset.
+
+* In dealing with scalability and sparsity issues in **Collaborative Filtering (CF)**, we can employ a **latent factor model** that captures the inherent resemblances between users and items. The objective is to convert the recommendation problem into an optimization challenge.
+
+* Using the Collaborating technique (Content Based), our final average RMSE value is 0.89 approx in Item-Based Corss-Validation Filtering.
+* The RMSE value for User-Based CF is greater than the RMSE value for Item-Based. 
 
 
 
