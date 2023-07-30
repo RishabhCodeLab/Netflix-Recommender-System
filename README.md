@@ -69,6 +69,22 @@ jupyter notebook
 
 Now you are ready with the whole environment setup of the **Surprise** library.
 
+## Some other Python libraries we have to import are following:
+```Python
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import linear_kernel
+from ast import literal_eval
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from surprise import SVD, Reader
+from surprise import Dataset
+from surprise.model_selection import cross_validate
+from surprise import Dataset, Reader, KNNBasic
+from surprise.model_selection import train_test_split
+from surprise import accuracy
+import matplotlib.pyplot as plt
+```
+
 ## Metrics and Results
 
 * Demographic filtering, we use the **IMDB** formula to calculate the rating or preferences of users.
